@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<button onclick="ExePostReq()">Execute Post Request</button>
+
+    <script>
+        function ExePostReq(){
+            var url='https://api.example.com/submit';
+            var data={
+                "name": "John Doe",
+                "email": 
+                "johndoe@example.com"
+}
+            var Config={
+                method:'POST',
+                headers:{'Accept':'application/json','Content-Type':'application/json'},
+                body:JSON.stringify(data)
+            }
+            fetch(url,Config)
+            .then(res=>res.json())
+            .then(data=>console.log(data))
+            .catch(err=>console.log(err))
+        }
+    </script>
+</body>
+</html>

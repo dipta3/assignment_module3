@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12</title>
+    <style>
+        .img{
+            height: 600px;
+            width: 500px;
+        }
+    </style>
+</head>
+<body>
+    
+    <button onclick="changeImage()">Change Image Source</button>
+    <br>
+    <img class="img" id="image" src="/7/goat.jpg" alt="Initial Image">
+
+    <script>
+        function changeImage() {
+          const image = document.getElementById("image");
+          image.src = "/7/Cristiano_Ronaldo.jpg";
+        }
+      </script>
+</body>
+</html>

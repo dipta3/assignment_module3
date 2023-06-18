@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10</title>
+</head>
+<style>
+    .highlight {
+      background-color: yellow;
+    }
+  </style>
+<body>
+    
+    <button onclick="addStyle()">Add Highlight Class</button>
+    <p id="para">Hello World</p>
+
+    <script>
+        function addStyle() {
+        const p = document.getElementById("para");
+        p.classList.add("highlight");
+    }
+    </script>
+</body>
+</html>

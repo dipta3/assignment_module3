@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7C</title>
+    <style>
+        .image {
+          width: 600px;
+          height: 600px;
+        }
+      </style>
+</head>
+<body>
+    
+    <img id="img" class="image" src="./Cristiano_Ronaldo.jpg" alt="" onmouseover="changeImageSource()">
+
+    <script>
+        function changeImageSource() {
+        const image = document.getElementById("img");
+        image.src = "./goat.jpg"; 
+    }
+    </script>
+</body>
+</html>

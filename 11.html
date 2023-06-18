@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11</title>
+</head>
+<body>
+    
+    <ul id="myList"></ul>
+    <button onclick="createItems()">Create List Items</button>
+
+
+
+    <script>
+        function createItems() {
+          const ul = document.getElementById("myList");
+    
+          for (let i = 1; i <= 5; i++) {
+            const li = document.createElement("li");
+            li.textContent = i;
+            ul.appendChild(li);
+          }
+        }
+      </script>
+</body>
+</html>
